@@ -1,20 +1,20 @@
 import java.io.Console;
 import java.util.Scanner;
-
+//creating  login program class
 public class LoginProgram {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String username = "george";
         String password = "george123";
         int attempts = 3;
-
+//creating instances on attempts made
         while (attempts > 0) {
             System.out.print("Enter username: ");
             String inputUsername = scanner.nextLine();
 
             System.out.print("Enter password: ");
             String inputPassword = hidePasswordInput(scanner);
-
+// logic programing
             if (username.equals(inputUsername) && password.equals(inputPassword)) {
                 System.out.println("Login successful!");
                 break;
